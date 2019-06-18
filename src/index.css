@@ -21,21 +21,34 @@ img {
   opacity: 0.9;
   
 }
-button {
-  float: right;
-  margin: 50px;
-  margin-right: 50px;
+.btn {
   font-size: 24px;
-  font-family: cambria;
+  font-family:Courier;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  text-align: center;
+  margin: 4px 2px;
+  transition: 0.3s;
+  float: right;
+  margin-top: 120px;
+}
+.btn:hover {
+  background-color: #3e8e41;
+  color:white;
+
+}
+
+.w3-container {
+  background-color: white;
+  width: auto;
+  height: 300px;
 }
 
 p.story {
-  text-align: center;
-  margin-left: 240px;
-  margin-top: 50px;
-}
+  text-align: center, justify;
+  margin-top: 100px;
+  font-family: Courier;
 
-div.fencing {
-  margin-top: 1000px;
-  width: auto;
+  
 }
