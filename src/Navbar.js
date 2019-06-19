@@ -8,7 +8,10 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem,
+  NavItem,
+  NavLink,
+ } from 'reactstrap';
 
   
 
@@ -42,10 +45,12 @@ export default class Example extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
+                    <NavItem><NavLink exact to="about_me" className="nav-link" activeClassName="active">About Me</NavLink>
+                    </NavItem>
+                    Story
                   </DropdownItem>
                   <DropdownItem>
-                    Option 2
+                    About me
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>

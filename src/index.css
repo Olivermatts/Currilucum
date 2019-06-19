@@ -46,9 +46,16 @@ img {
 }
 
 p.story {
-  text-align: center, justify;
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
   font-family: Courier;
+  margin-left: 120px;
+}
 
-  
+
+.About {
+  background-color: whitesmoke;
+  text-align: center;
+  font-family: Georgia;
 }
