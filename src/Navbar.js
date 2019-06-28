@@ -9,9 +9,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavItem,
-  NavLink,
  } from 'reactstrap';
+
 
   
 
@@ -27,6 +26,7 @@ export default class Example extends React.Component {
   }
   toggle() {
     this.setState({
+
       isOpen: !this.state.isOpen
     });
   }
@@ -35,7 +35,8 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">My Website</NavbarBrand>
+
+          <NavbarBrand href="/"><strong>My website</strong></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -45,12 +46,15 @@ export default class Example extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <NavItem><NavLink exact to="about_me" className="nav-link" activeClassName="active">About Me</NavLink>
-                    </NavItem>
-                    Story
+                  <a href="#Story">Story</a>
                   </DropdownItem>
+                  <DropdownItem divider />
                   <DropdownItem>
-                    About me
+                  <a href="#about_me">About Me</a>
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                  <a href="#fencing_video">Video</a>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
@@ -61,8 +65,14 @@ export default class Example extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
+        
+
       </div>
     );
   }
 }
+
+
+
+
 

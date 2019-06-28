@@ -41,7 +41,7 @@
 <!--/.Carousel Wrapper-->
 <article class="w3-container">
     <button class="btn" onclick="myFunction()">Story</button>
-  <div id="story" style="display: none">
+  <div id="Story" style="display: none">
   <p class="story">
       The way i started to fence was quite strange,</br>
       I was forced to start because at the time</br>
@@ -70,7 +70,22 @@
 
   </p>
   </div>
-</article>
+
+  
+    <div class="fencing" id="fencing_video">
+
+    <video id="video1" width="400" height="240" controls src="IMG_0362.mp4">
+        Your browser does not suppoer HTML5 video.
+    </video>
+  </br>
+    <button onclick="playPause()">Play/Pause</button> 
+    <button onclick="makeBig()">Large</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+    </div>
+  </articel>
+
+
 
 
 <!-- Story button-->
@@ -84,6 +99,28 @@ function myFunction() {
   }
 }
 </script>
+
+
+<!-- Video buttons -->
+<script> 
+    var myVideo = document.getElementById("video1"); 
+    
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    } 
+    
+    function makeBig() { 
+        myVideo.width = 560; 
+    } 
+    
+    function makeNormal() { 
+        myVideo.width = 420; 
+    } 
+    
+    </script> 
 
     <!--
       This HTML file is a template.

@@ -10,18 +10,12 @@ import {
 const items = [
   {
     src: 'https://cdn.pixabay.com/photo/2014/11/13/06/12/boy-529067__340.jpg',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
   },
   {
     src: 'https://images.unsplash.com/photo-1542500121-0d07e29f27f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
   },
   {
     src: 'https://images.unsplash.com/photo-1505619656705-59ebc350b547?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
   }
 ];
 
